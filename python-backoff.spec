@@ -3,7 +3,7 @@
 Summary: Python library providing function decorators for configurable backoff and retry
 Name:		python-%{module}
 Version:	2.2.1
-Release:	1
+Release:	2
 Group:		Development/Python
 License:	MIT
 URL:		https://github.com/litl/backoff
