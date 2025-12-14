@@ -9,7 +9,11 @@ License:	MIT
 URL:		https://github.com/litl/backoff
 Source0:	%{url}/archive/v%{version}/%{module}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python3dist(poetry)
+BuildRequires:	pkgconfig
+BuildRequires:	pkgconfig(python)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(poetry-core)
 
 %description
 This module provides function decorators which can be used to wrap
@@ -32,4 +36,4 @@ polling resources for externally generated content.
 %license LICENSE
 %doc CHANGELOG.md README.rst
 %{python_sitelib}/%{module}/
-%{python_sitelib}/%{module}-*.dist-info/
+%{python_sitelib}/%{module}-%{version}.dist-info/
