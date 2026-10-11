@@ -3,7 +3,7 @@
 
 Name:		python-backoff
 Version:	2.3.1
-Release:	1
+Release:	2
 Summary:	Python library providing function decorators for configurable backoff and retry
 Group:		Development/Python
 License:	MIT
